@@ -25,9 +25,9 @@ module.exports = {
 
             CREATE TABLE cities (
                 city_id SERIAL PRIMARY KEY,
-                name VARCHAR 
-                rating INTEGER
-                country_id INTEGER REFERENCES countries('country_id')
+                name VARCHAR, 
+                rating INTEGER,
+                country_id INTEGER REFERENCES countries(country_id)
             );
 
             insert into countries (name)
